@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peta Titik Koordinat Kapal - Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        #map {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script>
+    // Inisialisasi peta
+    const map = L.map('map').setView([-5.85, 106.15], 10);
+
+    // Layer peta Street Map (OpenStreetMap)
+    const streetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    });
+
+    // Layer peta Imagery (ESRI)
+    const imageryMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    });
+
+    // Tambahkan Street Map sebagai layer default
+    streetMap.addTo(map);
+
+    // Buat ikon kapal
+    const shipIcon = L.icon({
+        iconUrl: 'img/kpl.png', // Ganti path ini jika ikon ada di folder berbeda
+        iconSize: [32, 32], // Ukuran ikon
+        iconAnchor: [16, 16], // Titik tengah ikon
+        popupAnchor: [0, -16] // Posisi popup terkait ikon
+    });
+
+    // Data koordinat kapal
+    const kapalCoordinates = [
+    { lat: -5.825, lon: 106.15 },
+    { lat: -5.825, lon: 106.225 },
+    { lat: -5.829167, lon: 106.1875 },
+    { lat: -5.829167, lon: 106.225 },
+    { lat: -5.833333, lon: 106.1125 },
+    { lat: -5.833333, lon: 106.1375 },
+    { lat: -5.833333, lon: 106.175 },
+    { lat: -5.833333, lon: 106.1875 },
+    { lat: -5.833333, lon: 106.208333 },
+    { lat: -5.8375, lon: 106.129167 },
+    { lat: -5.8375, lon: 106.145833 },
+    { lat: -5.8375, lon: 106.179167 },
+    { lat: -5.845833, lon: 106.1375 },
+    { lat: -5.845833, lon: 106.166667 },
+    { lat: -5.845833, lon: 106.1875 },
+    { lat: -5.845833, lon: 106.208333 },
+    { lat: -5.85, lon: 106.15 },
+    { lat: -5.854167, lon: 106.104167 },
+    { lat: -5.854167, lon: 106.116667 },
+    { lat: -5.854167, lon: 106.141667 },
+    { lat: -5.854167, lon: 106.1625 },
+    { lat: -5.854167, lon: 106.170833 },
+    { lat: -5.854167, lon: 106.225 },
+    { lat: -5.854167, lon: 106.266667 },
+    { lat: -5.858333, lon: 106.1375 },
+    { lat: -5.858333, lon: 106.15 },
+    { lat: -5.858333, lon: 106.191667 },
+    { lat: -5.858333, lon: 106.2375 },
+    { lat: -5.858333, lon: 106.270833 },
+    { lat: -5.8625, lon: 106.154167 },
+    { lat: -5.8625, lon: 106.170833 },
+    { lat: -5.8625, lon: 106.183333 },
+    { lat: -5.8625, lon: 106.208333 },
+    { lat: -5.8625, lon: 106.233333 },
+    { lat: -5.866667, lon: 106.120833 },
+    { lat: -5.866667, lon: 106.15 },
+    { lat: -5.866667, lon: 106.166667 },
+    { lat: -5.866667, lon: 106.170833 },
+    { lat: -5.875, lon: 106.120833 },
+    { lat: -5.875, lon: 106.1625 },
+    { lat: -5.875, lon: 106.241667 },
+    { lat: -5.879167, lon: 106.145833 },
+    { lat: -5.879167, lon: 106.158333 },
+    { lat: -5.879167, lon: 106.166667 },
+    { lat: -5.879167, lon: 106.195833 },
+    { lat: -5.879167, lon: 106.2125 },
+    { lat: -5.895833, lon: 106.204167 },
+    { lat: -5.929167, lon: 106.1125 },
+    { lat: -5.941667, lon: 106.104167 },
+    { lat: -5.958333, lon: 106.108333 },
+    { lat: -5.958333, lon: 106.1125 },
+    { lat: -5.9625, lon: 106.108333 },
+    { lat: -5.979167, lon: 106.133333 },
+    { lat: -5.983333, lon: 106.1125 },
+    { lat: -5.983333, lon: 106.125 },
+    { lat: -5.9875, lon: 106.1 },
+    { lat: -5.9875, lon: 106.120833 },
+    { lat: -5.9875, lon: 106.129167 }
+    ];
+
+    // Tambahkan marker dengan ikon kapal untuk setiap koordinat
+    kapalCoordinates.forEach(coord => {
+        L.marker([coord.lat, coord.lon], { icon: shipIcon }).addTo(map)
+            .bindPopup(`Jenis: Kapal<br>Latitude: ${coord.lat}<br>Longitude: ${coord.lon}`);
+    });
+
+    // Opsi layer
+    const baseMaps = {
+        "Street Map": streetMap,
+        "Imagery Map": imageryMap
+    };
+
+    // Tambahkan kontrol layer ke peta
+    L.control.layers(baseMaps).addTo(map);
+</script>
+
+</body>
+</html>

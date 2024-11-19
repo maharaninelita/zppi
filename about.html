@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SeaSight</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+            <small class="fa fa-map-marker-alt text-primary me-2"></small>
+            <small>Serang, Banten, INA</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center py-3">
+            <small class="far fa-clock text-primary me-2"></small>
+            <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+          </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+            <small class="fa fa-phone-alt text-primary me-2"></small>
+            <small>+012 345 6789</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center">
+            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a class="btn btn-sm-square bg-white text-primary me-0" href=""
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <a href="index.html" class="navbar-brand p-0">
+        <img class="img-fluid me-3" src="img/logo.png" alt="Icon"/>
+        <h1 class="m-0 text-primary">SeaSight</h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+        <div class="navbar-nav ms-auto">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link active">About</a>
+          <a href="service.html" class="nav-item nav-link">Services</a>
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Pages</a
+            >
+            <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+              <a href="animal.html" class="dropdown-item">Jenis Ikan</a>
+              <a href="visiting.html" class="dropdown-item">Penangkapan ikan</a>
+              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+              
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <a href="login.html" class="btn btn-primary"
+          >Login<i class="fa fa-arrow-right ms-3"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div
+    class="container-fluid header-bg py-5 mb-5 wow fadeIn" 
+     data-wow-delay="0.1s" 
+     style="background-image: url('img/panjang/p6.jpeg'); background-position: center;">
+  
+
+    >
+      <div class="container py-5">
+        <h1 class="display-4 text-white mb-3 animated slideInDown">About Us</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-white" href="#">Pages</a>
+            </li>
+            <li class="breadcrumb-item text-primary active" aria-current="page">
+              About Us
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+          <div class="row g-5">
+              <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                  <p>ZONA POTENSIAL PENANGKAPN IKAN DI PULO PANJANG</p>
+                  <!-- Elemen peta dengan ujung landai -->
+                  <title>Peta Kapal dan ZPPI - Leaflet</title>
+                  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+                  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+                  <style>
+                      html, body {
+                          height: 100%;
+                          margin: 0;
+                          font-family: 'Arial', sans-serif;
+                      }
+              
+                      #map {
+                          height: 100vh;
+                      }
+              
+                      .leaflet-control {
+                          background-color: rgba(255, 255, 255, 0.8);
+                          padding: 12px;
+                          border-radius: 8px;
+                          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+                          font-size: 14px;
+                      }
+              
+                      #controls {
+                          display: flex;
+                          flex-direction: column;
+                          gap: 10px;
+                      }
+              
+                      #controls button {
+                          padding: 12px;
+                          font-size: 16px;
+                          cursor: pointer;
+                          border: none;
+                          background-color: #3b9de2;
+                          color: white;
+                          border-radius: 8px;
+                          transition: background-color 0.3s, transform 0.3s;
+                      }
+              
+                      #controls button:hover {
+                          background-color: #2980b9;
+                          transform: scale(1.05);
+                      }
+              
+                      #controls button:focus {
+                          outline: none;
+                      }
+              
+                      .leaflet-popup-content {
+                          font-size: 14px;
+                          color: #333;
+                      }
+              
+                      .leaflet-popup-content b {
+                          color: #2980b9;
+                      }
+                  </style>
+              </head>
+              <body>
+              
+              <div id="map"></div>
+              
+              <script>
+                  // Inisialisasi peta
+                  const map = L.map('map', {
+                      center: [-5.85, 106.15],
+                      zoom: 10,
+                      zoomControl: false // Menonaktifkan kontrol zoom default
+                  });
+              
+                  // Layer peta Street Map (OpenStreetMap)
+                  const streetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                      attribution: '&copy; OpenStreetMap contributors'
+                  });
+              
+                  // Layer peta Imagery (ESRI)
+                  const imageryMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+                  });
+              
+                  // Tambahkan Street Map sebagai layer default
+                  streetMap.addTo(map);
+              
+                  // Opsi layer
+                  const baseMaps = {
+                      "Street Map": streetMap,
+                      "Imagery Map": imageryMap
+                  };
+              
+                  L.control.layers(baseMaps).addTo(map);
+              
+                  // Fungsi untuk mengonversi format DMS ke desimal
+                  function dmsToDecimal(dmsString) {
+                      const parts = dmsString.match(/(\d+)[°] (\d+)' (\d+\.\d+)"/);
+                      const degrees = parseFloat(parts[1]);
+                      const minutes = parseFloat(parts[2]);
+                      const seconds = parseFloat(parts[3]);
+                      const decimal = degrees + (minutes / 60) + (seconds / 3600);
+                      return dmsString.includes('S') || dmsString.includes('W') ? -decimal : decimal;
+                  }
+              
+                  // Data koordinat kapal
+                  const kapalCoordinates = [
+                  { lat: -5.825, lon: 106.15 },
+                  { lat: -5.825, lon: 106.225 },
+                  { lat: -5.829167, lon: 106.1875 },
+                  { lat: -5.829167, lon: 106.225 },
+                  { lat: -5.833333, lon: 106.1125 },
+                  { lat: -5.833333, lon: 106.1375 },
+                  { lat: -5.833333, lon: 106.175 },
+                  { lat: -5.833333, lon: 106.1875 },
+                  { lat: -5.833333, lon: 106.208333 },
+                  { lat: -5.8375, lon: 106.129167 },
+                  { lat: -5.8375, lon: 106.145833 },
+                  { lat: -5.8375, lon: 106.179167 },
+                  { lat: -5.845833, lon: 106.1375 },
+                  { lat: -5.845833, lon: 106.166667 },
+                  { lat: -5.845833, lon: 106.1875 },
+                  { lat: -5.845833, lon: 106.208333 },
+                  { lat: -5.85, lon: 106.15 },
+                  { lat: -5.854167, lon: 106.104167 },
+                  { lat: -5.854167, lon: 106.116667 },
+                  { lat: -5.854167, lon: 106.141667 },
+                  { lat: -5.854167, lon: 106.1625 },
+                  { lat: -5.854167, lon: 106.170833 },
+                  { lat: -5.854167, lon: 106.225 },
+                  { lat: -5.854167, lon: 106.266667 },
+                  { lat: -5.858333, lon: 106.1375 },
+                  { lat: -5.858333, lon: 106.15 },
+                  { lat: -5.858333, lon: 106.191667 },
+                  { lat: -5.858333, lon: 106.2375 },
+                  { lat: -5.858333, lon: 106.270833 },
+                  { lat: -5.8625, lon: 106.154167 },
+                  { lat: -5.8625, lon: 106.170833 },
+                  { lat: -5.8625, lon: 106.183333 },
+                  { lat: -5.8625, lon: 106.208333 },
+                  { lat: -5.8625, lon: 106.233333 },
+                  { lat: -5.866667, lon: 106.120833 },
+                  { lat: -5.866667, lon: 106.15 },
+                  { lat: -5.866667, lon: 106.166667 },
+                  { lat: -5.866667, lon: 106.170833 },
+                  { lat: -5.875, lon: 106.120833 },
+                  { lat: -5.875, lon: 106.1625 },
+                  { lat: -5.875, lon: 106.241667 },
+                  { lat: -5.879167, lon: 106.145833 },
+                  { lat: -5.879167, lon: 106.158333 },
+                  { lat: -5.879167, lon: 106.166667 },
+                  { lat: -5.879167, lon: 106.195833 },
+                  { lat: -5.879167, lon: 106.2125 },
+                  { lat: -5.895833, lon: 106.204167 },
+                  { lat: -5.929167, lon: 106.1125 },
+                  { lat: -5.941667, lon: 106.104167 },
+                  { lat: -5.958333, lon: 106.108333 },
+                  { lat: -5.958333, lon: 106.1125 },
+                  { lat: -5.9625, lon: 106.108333 },
+                  { lat: -5.979167, lon: 106.133333 },
+                  { lat: -5.983333, lon: 106.1125 },
+                  { lat: -5.983333, lon: 106.125 },
+                  { lat: -5.9875, lon: 106.1 },
+                  { lat: -5.9875, lon: 106.120833 },
+                  { lat: -5.9875, lon: 106.129167 }
+                  ];
+              
+                  // Data koordinat ZPPI dalam format DMS
+                  const zppiCoordinates = [
+                  { latitude: "05° 49' 30.00039816\" S", longitude: "106° 09' 00.00040752\" E" },
+                  { latitude: "05° 49' 30.00039816\" S", longitude: "106° 13' 30.00040968\" E" },
+                  { latitude: "05° 49' 45.00039828\" S", longitude: "106° 11' 15.00040860\" E" },
+                  { latitude: "05° 49' 45.00039828\" S", longitude: "106° 13' 30.00040968\" E" },
+                  { latitude: "05° 50' 00.00039840\" S", longitude: "106° 06' 45.00040644\" E" },
+                  { latitude: "05° 50' 00.00039840\" S", longitude: "106° 08' 15.00040716\" E" },
+                  { latitude: "05° 50' 00.00039840\" S", longitude: "106° 10' 30.00040824\" E" },
+                  { latitude: "05° 50' 00.00039840\" S", longitude: "106° 11' 15.00040860\" E" },
+                  { latitude: "05° 50' 00.00039840\" S", longitude: "106° 12' 30.00040920\" E" },
+                  { latitude: "05° 50' 15.00039852\" S", longitude: "106° 07' 45.00040692\" E" },
+                  { latitude: "05° 50' 15.00039852\" S", longitude: "106° 08' 45.00040740\" E" },
+                  { latitude: "05° 50' 15.00039852\" S", longitude: "106° 10' 45.00040836\" E" },
+                  { latitude: "05° 50' 45.00039876\" S", longitude: "106° 08' 15.00040716\" E" },
+                  { latitude: "05° 50' 45.00039876\" S", longitude: "106° 10' 00.00040800\" E" },
+                  { latitude: "05° 50' 45.00039876\" S", longitude: "106° 11' 15.00040860\" E" },
+                  { latitude: "05° 50' 45.00039876\" S", longitude: "106° 12' 30.00040920\" E" },
+                  { latitude: "05° 51' 00.00039888\" S", longitude: "106° 09' 00.00040752\" E" },
+                  { latitude: "05° 51' 15.00039900\" S", longitude: "106° 06' 15.00040620\" E" },
+                  { latitude: "05° 51' 15.00039900\" S", longitude: "106° 07' 00.00040656\" E" },
+                  { latitude: "05° 51' 15.00039900\" S", longitude: "106° 08' 30.00040728\" E" },
+                  { latitude: "05° 51' 15.00039900\" S", longitude: "106° 09' 45.00040788\" E" },
+                  { latitude: "05° 51' 15.00039900\" S", longitude: "106° 10' 15.00040812\" E" },
+                  { latitude: "05° 51' 15.00039900\" S", longitude: "106° 13' 30.00040968\" E" },
+                  { latitude: "05° 51' 15.00039900\" S", longitude: "106° 16' 00.00041088\" E" },
+                  { latitude: "05° 51' 30.00039912\" S", longitude: "106° 08' 15.00040716\" E" },
+                  { latitude: "05° 51' 30.00039912\" S", longitude: "106° 09' 00.00040752\" E" },
+                  { latitude: "05° 51' 30.00039912\" S", longitude: "106° 11' 30.00040872\" E" },
+                  { latitude: "05° 51' 30.00039912\" S", longitude: "106° 14' 15.00041004\" E" },
+                  { latitude: "05° 51' 30.00039912\" S", longitude: "106° 16' 15.00041100\" E" },
+                  { latitude: "05° 51' 45.00039924\" S", longitude: "106° 09' 15.00040764\" E" },
+                  { latitude: "05° 51' 45.00039924\" S", longitude: "106° 10' 15.00040812\" E" },
+                  { latitude: "05° 51' 45.00039924\" S", longitude: "106° 11' 00.00040848\" E" },
+                  { latitude: "05° 51' 45.00039924\" S", longitude: "106° 12' 30.00040920\" E" },
+                  { latitude: "05° 51' 45.00039924\" S", longitude: "106° 14' 00.00040992\" E" },
+                  { latitude: "05° 52' 00.00039936\" S", longitude: "106° 07' 15.00040668\" E" },
+                  { latitude: "05° 52' 00.00039936\" S", longitude: "106° 09' 00.00040752\" E" },
+                  { latitude: "05° 52' 00.00039936\" S", longitude: "106° 10' 00.00040800\" E" },
+                  { latitude: "05° 52' 00.00039936\" S", longitude: "106° 10' 15.00040812\" E" },
+                  { latitude: "05° 52' 30.00039960\" S", longitude: "106° 07' 15.00040668\" E" }
+                  ];
+              
+                  // Ikon kapal
+                  const shipIcon = L.icon({
+                      iconUrl: 'img/kpl.png',
+                      iconSize: [32, 32],
+                      iconAnchor: [16, 16],
+                      popupAnchor: [0, -16]
+                  });
+              
+                  // Ikon ZPPI
+                  const zppiIcon = L.icon({
+                      iconUrl: 'img/fishing-area.png',
+                      iconSize: [32, 32],
+                      iconAnchor: [16, 32],
+                      popupAnchor: [0, -32]
+                  });
+              
+                  // Marker untuk kategori Kapal
+                  const kapalMarkers = kapalCoordinates.map(coord => 
+                      L.marker([coord.lat, coord.lon], { icon: shipIcon })
+                          .bindPopup(`<b>Kapal</b><br>Latitude: ${coord.lat}<br>Longitude: ${coord.lon}`)
+                  );
+              
+                  // Marker untuk kategori ZPPI
+                  const zppiMarkers = zppiCoordinates.map(coord => {
+                      const lat = dmsToDecimal(coord.latitude);
+                      const lon = dmsToDecimal(coord.longitude);
+                      return L.marker([lat, lon], { icon: zppiIcon })
+                          .bindPopup(`<b>ZPPI</b><br>Latitude: ${lat.toFixed(6)}<br>Longitude: ${lon.toFixed(6)}`);
+                  });
+              
+                  // Fungsi untuk menampilkan kategori
+                  function showCategory(category) {
+                      map.eachLayer(layer => {
+                          if (layer !== streetMap && layer !== imageryMap) {
+                              map.removeLayer(layer);
+                          }
+                      });
+              
+                      if (category === 'kapal') {
+                          kapalMarkers.forEach(marker => marker.addTo(map));
+                      } else if (category === 'zppi') {
+                          zppiMarkers.forEach(marker => marker.addTo(map));
+                      }
+                  }
+              
+                  // Tampilkan kategori Kapal secara default
+                  showCategory('kapal');
+              
+                  // Kontrol zoom kustom di sudut kanan atas
+                  L.control.zoom({
+                      position: 'topright' // Menempatkan kontrol zoom di sudut kanan atas
+                  }).addTo(map);
+              
+                  // Kontrol kategori ZPPI dan Kapal di bawah kontrol zoom
+                  const controls = L.control({ position: 'topright' });
+                  controls.onAdd = function () {
+                      const div = L.DomUtil.create('div', 'leaflet-control');
+                      div.innerHTML = `
+                          <div id="controls">
+                              <button onclick="showCategory('kapal')">Kapal</button>
+                              <button onclick="showCategory('zppi')">ZPPI</button>
+                          </div>
+                      `;
+                      return div;
+                  };
+                  controls.addTo(map);
+              </script>
+              
+              </body>
+              </html>
+              
+    <!-- About End -->
+
+    <!-- Facts Start -->
+    <div
+  class="container-xxl bg-primary facts my-5 py-5 wow fadeInUp"
+  data-wow-delay="0.1s"
+  style="background-image: url('img/panjang/p5.jpeg'); background-size: cover; background-position: center;">
+  <div class="container py-5">
+    <div class="row g-4">
+      <div
+        class="col-md-6 col-lg-3 text-center wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <i class="fa fa-fish fa-3x text-primary mb-3"></i>
+        <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
+        <p class="text-white mb-0">Total Tangkapan</p>
+      </div>
+      <div
+        class="col-md-6 col-lg-3 text-center wow fadeIn"
+        data-wow-delay="0.3s"
+      >
+        <i class="fa fa-users fa-3x text-primary mb-3"></i>
+        <h1 class="text-white mb-2" data-toggle="counter-up">50</h1>
+        <p class="text-white mb-0">Jumlah Nelayan</p>
+      </div>
+      <div
+        class="col-md-6 col-lg-3 text-center wow fadeIn"
+        data-wow-delay="0.5s"
+      >
+        <i class="fa fa-cogs fa-3x text-primary mb-3"></i>
+        <h1 class="text-white mb-2" data-toggle="counter-up">15</h1>
+        <p class="text-white mb-0">Jenis Ikan</p>
+      </div>
+      <div
+        class="col-md-6 col-lg-3 text-center wow fadeIn"
+        data-wow-delay="0.7s"
+      >
+        <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
+        <h1 class="text-white mb-2" data-toggle="counter-up">123</h1>
+        <p class="text-white mb-0">Konservasi Laut</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Facts End -->
+
+    <!-- Facts End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+          Our Members Say!
+        </h1>
+    
+        <!-- Testimonial Carousel -->
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s" id="testimonialCarousel">
+          <div class="testimonial-item text-center">
+            <img
+              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+              src="img/testimonial-1.jpg"
+              style="width: 100px; height: 100px"
+            />
+            <div class="testimonial-text rounded text-center p-4">
+              <p>
+                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                clita erat magna elitr erat sit sit erat at rebum justo sea
+                clita.
+              </p>
+              <h5 class="mb-1">Patient Name</h5>
+              <span class="fst-italic">Profession</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Form to add new testimonial -->
+        <div class="mt-5">
+          <h2 class="text-center mb-4">Add Your Testimonial</h2>
+          <form id="testimonialForm" class="d-flex flex-column align-items-center">
+            <input type="text" class="form-control mb-3" id="userName" placeholder="Your Name" required>
+            <input type="text" class="form-control mb-3" id="userProfession" placeholder="Your Profession" required>
+            <textarea class="form-control mb-3" id="userTestimonial" rows="4" placeholder="Your Testimonial" required></textarea>
+            <button type="submit" class="btn btn-primary">Submit Testimonial</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div
+    class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn"
+    data-wow-delay="0.1s"
+    style="background-image: url('img/panjang/p11.jpg'); background-size: cover; background-position: center;">
+  >
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Address</h5>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>Serang, Banten, INA
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>@SeaSight.com
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href=""
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social" href=""
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social" href=""
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social" href=""
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Quick Links</h5>
+          <a class="btn btn-link" href="">About Us</a>
+          <a class="btn btn-link" href="">Contact Us</a>
+          <a class="btn btn-link" href="">Our Services</a>
+          <a class="btn btn-link" href="">Terms & Condition</a>
+          <a class="btn btn-link" href="">Support</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Popular Links</h5>
+          <a class="btn btn-link" href="">About Us</a>
+          <a class="btn btn-link" href="">Contact Us</a>
+          <a class="btn btn-link" href="">Our Services</a>
+          <a class="btn btn-link" href="">Terms & Condition</a>
+          <a class="btn btn-link" href="">Support</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Newsletter</h5>
+          <p>Mari Bergabung dengan Kami</p>
+          <div class="position-relative mx-auto" style="max-width: 400px">
+            <input
+              class="form-control border-0 w-100 py-3 ps-4 pe-5"
+              type="text"
+              placeholder="Your email"
+            />
+            <button
+              type="button"
+              class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+            >
+              SignUp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">SeaSight</a>, All
+            Right Reserved.
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
